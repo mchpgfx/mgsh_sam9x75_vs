@@ -1,0 +1,24 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch mgs_qs_9x75_curiosity_ac69t88a: default",
+            "type": "mplab-core-da",
+            "request": "launch",
+            "project": "mgs_qs_9x75_curiosity_ac69t88a",
+            "configuration": "default",
+            "stopOnEntry": true,
+            "preLaunchTask": "mgs_qs_9x75_curiosity_ac69t88a: default - Full Build",
+            "program": "c:\\Drive\\H3\\H3Dev\\apps\\gfx_ex\\mgsh_vscode_sam9x75\\mgs_quickstart\\mgs_qs_9x75_curiosity_ac69t88a\\out\\mgs_qs_9x75_curiosity_ac69t88a\\default.elf",
+            "debugFiles": [
+                "c:/Drive/H3/H3Dev/apps/gfx_ex/mgsh_vscode_sam9x75/mgs_quickstart/mgs_qs_9x75_curiosity_ac69t88a/binaries/at91bootstrap.elf"
+            ],
+            "programFiles": [
+                "c:/Drive/H3/H3Dev/apps/gfx_ex/mgsh_vscode_sam9x75/mgs_quickstart/mgs_qs_9x75_curiosity_ac69t88a/binaries/at91bootstrap.elf"
+            ]
+        }
+    ]
+}

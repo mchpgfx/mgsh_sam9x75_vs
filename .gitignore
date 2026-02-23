@@ -1,0 +1,7 @@
+*.log
+*.o
+*.map
+*.d
+**/out
+**/_build
+**/.generated
