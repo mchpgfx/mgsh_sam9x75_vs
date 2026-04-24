@@ -66,6 +66,8 @@ extern "C" {
 #define LE_DEBUG                             0 // internal use only, do not change
 #define LE_DEBUG_RENDERER                    0 // internal use only, do not change
 
+#define LE_DEBUG_BLIT_RECTS                  0
+
 #define LE_DEFAULT_SCREEN_WIDTH              480
 #define LE_DEFAULT_SCREEN_HEIGHT             640
 

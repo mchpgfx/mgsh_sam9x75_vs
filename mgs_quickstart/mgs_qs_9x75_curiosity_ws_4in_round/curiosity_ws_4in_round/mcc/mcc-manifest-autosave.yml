@@ -2,7 +2,7 @@
 
 manifest_file_version: 1.0.0
 project: curiosity_ws_4in_round_default
-creation_date: 2026-02-19T17:25:45.392-07:00[America/Phoenix]
+creation_date: 2026-04-24T11:07:56.124-07:00[America/Phoenix]
 operating_system: Windows 11
 mcc_mode: VSCodePlugin
 mcc_mode_version: Unknown
@@ -18,6 +18,6 @@ device_library: {library_class: com.microchip.mcc.harmony.Harmony3Library, name:
   version: Bundled}
 packs: {name: SAM9X7_DFP, version: 1.9.170}
 modules:
-- {name: core, type: HARMONY, version: v3.16.0}
+- {name: core, type: HARMONY, version: v3.16.2}
 - {name: csp, type: HARMONY, version: v3.25.1}
-- {name: gfx, type: HARMONY, version: v3.16.3}
+- {name: gfx, type: HARMONY, version: v3.17.0}
