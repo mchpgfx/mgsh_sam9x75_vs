@@ -9,12 +9,55 @@ Welcome to the SAM9x75 MGS Application Examples repository! This collection prov
 
 ---
 
+## Project Types
+
+This repository contains two types of quickstart projects, each designed for different use cases:
+
+### MGS Quickstart (`mgs_quickstart/`)
+
+Full-featured graphics applications using the **MGS Harmony Legato graphics library**. These projects are ideal for:
+
+- **Rapid UI development** - Design screens visually using MGS Composer
+- **Widget-based interfaces** - Buttons, labels, images, progress bars, and more
+- **Event-driven programming** - Built-in touch and input event handling
+- **Production applications** - Complete graphics stack with hardware acceleration
+
+The Legato library provides a high-level API for creating professional user interfaces with minimal code.
+
+### Blank Quickstart (`blank_quickstart/`)
+
+**Headless graphics applications** that provide direct framebuffer and touch access without a graphics library. These projects are ideal for:
+
+- **Custom rendering engines** - Integrate third-party libraries (LVGL, emWin, TouchGFX)
+- **Minimal footprint** - When a full graphics stack is unnecessary
+- **Learning and prototyping** - Understand low-level display and touch driver interfaces
+- **Performance-critical applications** - Direct pixel manipulation without library overhead
+
+Each blank_quickstart project includes documentation on interfacing with the XLCDC display driver and System Input Service.
+
+---
+
 ## Features
 
 - Example projects for SAM9x75 MGS applications
 - Step-by-step instructions for setup and build
 - Integration with VS Code and MPLAB extensions
 - Modular code structure for easy customization
+- Support for multiple display types and sizes
+
+### Available Projects
+
+| Project | Display | Type |
+|---------|---------|------|
+| `mgs_qs_9x75_curiosity_ac69t88a` | AC69T88A 5" WVGA (800x480) | MGS Quickstart |
+| `mgs_qs_9x75_curiosity_ws_2_8inch` | Waveshare 2.8" | MGS Quickstart |
+| `mgs_qs_9x75_curiosity_ws_4in_round` | Waveshare 4" Round | MGS Quickstart |
+| `mgs_qs_9x75_curiosity_ws_7_9inch` | Waveshare 7.9" | MGS Quickstart |
+| `mgs_qs_9x75_curiosity_nvdi_10_1inch` | NVDI 10.1" | MGS Quickstart |
+| `mgs_qs_9x75_rdk` | RDK Display | MGS Quickstart |
+| `blank_qs_9x75_curiosity_ac69t88a_rgb565` | AC69T88A 5" WVGA (800x480) RGB565 | Blank Quickstart |
+| `blank_qs_9x75_curiosity_ac69t88a` | AC69T88A 5" WVGA (800x480) RGBA8888 | Blank Quickstart |
+
 
 ---
 
