@@ -161,7 +161,7 @@ extern "C" {
 #define LE_ALPHA_BLENDING_ENABLED          1
 #define LE_SCRATCH_BUFFER_COUNT            1
 #define LE_SCRATCH_BUFFER_SIZE_KB          4096
-#define LE_SCRATCH_BUFFER_PADDING          1
+#define LE_SCRATCH_BUFFER_PADDING          0
 #define LE_SCRATCH_BIG_ENDIAN              0
 #define LE_USE_ARC_SCAN_FILL               1
 #define LE_ARC_SMOOTH_EDGE                 LE_FALSE
