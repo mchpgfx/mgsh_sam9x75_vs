@@ -47,17 +47,18 @@ Each blank_quickstart project includes documentation on interfacing with the XLC
 
 ### Available Projects
 
-| Project | Display | Type |
-|---------|---------|------|
-| `mgs_qs_9x75_curiosity_ac69t88a` | AC69T88A 5" WVGA (800x480) | MGS Quickstart |
-| `mgs_qs_9x75_curiosity_ws_2_8inch` | Waveshare 2.8" | MGS Quickstart |
-| `mgs_qs_9x75_curiosity_ws_4in_round` | Waveshare 4" Round | MGS Quickstart |
-| `mgs_qs_9x75_curiosity_ws_7_9inch` | Waveshare 7.9" | MGS Quickstart |
-| `mgs_qs_9x75_curiosity_nvdi_10_1inch` | NVDI 10.1" | MGS Quickstart |
-| `mgs_qs_9x75_rdk` | RDK Display | MGS Quickstart |
-| `blank_qs_9x75_curiosity_ac69t88a_rgb565` | AC69T88A 5" WVGA (800x480) RGB565 | Blank Quickstart |
-| `blank_qs_9x75_curiosity_ac69t88a` | AC69T88A 5" WVGA (800x480) RGBA8888 | Blank Quickstart |
-
+| Project | Board | Display | Type |
+|---------|-------|---------|------|
+| `mgs_qs_9x75_curiosity_ac69t88a` | Curiosity | AC69T88A 5" WVGA (800x480) | MGS Quickstart |
+| `mgs_qs_9x75_curiosity_ws_2_8inch` | Curiosity | Waveshare 2.8" | MGS Quickstart |
+| `mgs_qs_9x75_curiosity_ws_4in_round` | Curiosity | Waveshare 4" Round | MGS Quickstart |
+| `mgs_qs_9x75_curiosity_ws_7_9inch` | Curiosity | Waveshare 7.9" | MGS Quickstart |
+| `mgs_qs_9x75_curiosity_nvdi_10_1inch` | Curiosity | NVDI 10.1" | MGS Quickstart |
+| `blank_qs_9x75_curiosity_ac69t88a_rgb565` | Curiosity | AC69T88A 5" WVGA (800x480) RGB565 | Blank Quickstart |
+| `blank_qs_9x75_curiosity_ac69t88a` | Curiosity | AC69T88A 5" WVGA (800x480) RGBA8888 | Blank Quickstart |
+| `mgs_qs_9x75_rdk` | RDK | RDK Display | MGS Quickstart |
+| `mgs_qs_9x75_hybrid_ac69t88a` | Hybrid | AC69T88A 5" WVGA (800x480) | MGS Quickstart |
+| `mgs_qs_9x75_hybrid_rpi_7inch` | Hybrid | Raspberry Pi Touch Display | MGS Quickstart |
 
 ---
 

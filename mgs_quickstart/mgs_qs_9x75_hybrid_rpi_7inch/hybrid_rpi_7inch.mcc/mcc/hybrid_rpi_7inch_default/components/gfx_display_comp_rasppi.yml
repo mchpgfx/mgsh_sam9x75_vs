@@ -1,0 +1,198 @@
+configVersion: 1.0.0
+componentName: gfx_display_comp_rasppi
+coreVersion: 5.9.1
+device: SAM9X75D2G
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: gfx_display_comp_rasppi
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: gfx
+  type: package
+  version: v3.17.1
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments:
+    children:
+    - children:
+      - attributes:
+          id: gfx_dsi_display_cap
+        children:
+        - children:
+          - attributes:
+              id: targetComponentID
+            children:
+            - type: Value
+              value: gfx_bridge_dsi_plib
+            type: String
+          - attributes:
+              id: targetAttachmentID
+            children:
+            - type: Value
+              value: gfx_dsi_display_dep
+            type: String
+          type: Attributes
+        type: DirectCapability
+      - attributes:
+          id: gfx_dsi_i2c_dep
+        children:
+        - children:
+          - attributes:
+              id: targetComponentID
+            children:
+            - type: Value
+              value: drv_i2c_0
+            type: String
+          - attributes:
+              id: targetAttachmentID
+            children:
+            - type: Value
+              value: drv_i2c
+            type: String
+          type: Attributes
+        type: DirectDependency
+      type: Attachments
+    type: gfx_display_comp_rasppi
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: gfx_display_comp_rasppi
+          x: '263'
+          y: '104'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    DSIDotClk:
+      attributes:
+        id: DSIDotClk
+        label: LCD Pixel Clock (kHz)
+      type: Integer
+    DSILaneBitrate:
+      attributes:
+        id: DSILaneBitrate
+        label: Lane Bitrate (kHz)
+      type: Integer
+    DSILanes:
+      attributes:
+        id: DSILanes
+        label: No. of Lanes
+      type: Integer
+    DataEnablePolarity:
+      attributes:
+        id: DataEnablePolarity
+        label: DE Active High
+      type: Boolean
+    DefaultBL:
+      attributes:
+        id: DefaultBL
+        label: Default Brightness
+      type: Integer
+    DelayBL:
+      attributes:
+        id: DelayBL
+        label: Backlight Delay (ms)
+      type: Integer
+    DisplayHeight:
+      attributes:
+        id: DisplayHeight
+        label: Display Height
+      type: Integer
+    DisplayWidth:
+      attributes:
+        id: DisplayWidth
+        label: Display Width
+      type: Integer
+    HSYNCNegative:
+      attributes:
+        id: HSYNCNegative
+        label: HSYNC Active Low
+      type: Boolean
+    HorFlip:
+      attributes:
+        id: HorFlip
+        label: Horizontal Flip
+      type: Boolean
+    HorzBackPorch:
+      attributes:
+        id: HorzBackPorch
+        label: Horizontal Back Porch
+      type: Integer
+    HorzFrontPorch:
+      attributes:
+        id: HorzFrontPorch
+        label: Horizontal Front Porch
+      type: Integer
+    HorzPulseWidth:
+      attributes:
+        id: HorzPulseWidth
+        label: Horizontal Pulse Width
+      type: Integer
+    I2CIdx:
+      attributes:
+        id: I2CIdx
+        label: I2C Instance
+      children:
+      - children:
+        - attributes:
+            id: gfx_display_comp_rasppi
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    I2CMode:
+      attributes:
+        id: I2CMode
+        label: Driver Mode
+      type: Combo
+    Name:
+      attributes:
+        id: Name
+        label: Name
+      type: String
+    RTOSEnableTaskDelay:
+      attributes:
+        id: RTOSEnableTaskDelay
+        label: Use Task Delay?
+      type: Boolean
+    RTOSTaskDelay:
+      attributes:
+        id: RTOSTaskDelay
+        label: Task Delay
+      type: Integer
+    RTOSTaskPriority:
+      attributes:
+        id: RTOSTaskPriority
+        label: Task Priority
+      type: Integer
+    RTOSTaskSize:
+      attributes:
+        id: RTOSTaskSize
+        label: Stack Size
+      type: Integer
+    VSYNCNegative:
+      attributes:
+        id: VSYNCNegative
+        label: VSYNC Active Low
+      type: Boolean
+    VertBackPorch:
+      attributes:
+        id: VertBackPorch
+        label: Vertical Back Porch
+      type: Integer
+    VertFrontPorch:
+      attributes:
+        id: VertFrontPorch
+        label: Vertical Front Porch
+      type: Integer
+    VertPulseWidth:
+      attributes:
+        id: VertPulseWidth
+        label: Vertical Pulse Width
+      type: Integer
+  userData: {}

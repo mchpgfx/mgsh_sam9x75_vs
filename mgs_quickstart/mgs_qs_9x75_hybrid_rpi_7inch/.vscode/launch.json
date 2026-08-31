@@ -1,0 +1,23 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+
+    {
+      // Note: Properties here can override MPLAB project settings
+      "name": "Launch mgs_qs_9x75_hybrid_rpi_7inch: default",
+      "type": "mplab-core-da",
+      "request": "launch",
+      "project": "mgs_qs_9x75_hybrid_rpi_7inch",
+      "configuration": "default",
+      "stopOnEntry": true,
+      "preLaunchTask": "mgs_qs_9x75_hybrid_rpi_7inch: default - Build",
+      "program": "${workspaceFolder}/out/mgs_qs_9x75_hybrid_rpi_7inch/default.elf",
+      "programFiles": [
+        "${workspaceFolder}/binaries/at91bootstrap.elf"
+      ]
+    }
+  ]
+}

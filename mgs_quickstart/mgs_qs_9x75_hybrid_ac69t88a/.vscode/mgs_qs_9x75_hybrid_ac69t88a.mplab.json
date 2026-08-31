@@ -1,0 +1,86 @@
+{
+    "version": "1.9",
+    "configurations": [
+        {
+            "name": "default",
+            "id": "",
+            "device": "SAM9X75D2G",
+            "imagePath": "./out/mgs_qs_9x75_hybrid_ac69t88a/default.elf",
+            "packs": [
+                {
+                    "name": "SAM9X7_DFP",
+                    "vendor": "Microchip",
+                    "version": "1.13.225"
+                }
+            ],
+            "fileSet": "default",
+            "toolchain": "default-XC32",
+            "userVariables": "default-uservariables",
+            "postBuildSteps": [
+                "${MP_CC_DIR}/xc32-objcopy -O binary %{TargetDirRelative}/%{ConfigurationName}.elf %{TargetDirRelative}/harmony.bin"
+            ]
+        }
+    ],
+    "propertyGroups": [
+        {
+            "name": "default-uservariables",
+            "type": "uservariables",
+            "properties": {
+                "boot.use": "true",
+                "boot.path": "./binaries/at91bootstrap.elf "
+            }
+        },
+        {
+            "name": "default-uservariables",
+            "type": "uservariables",
+            "properties": {}
+        },
+        {
+            "name": "default-XC32",
+            "type": "toolchain",
+            "provider": "microchip.toolchains:xc32@5.00",
+            "properties": {
+                "linker.heap-size": "512",
+                "compiler.extra-include-directories": [
+                    "hybrid_ac69t88a.mcc/mcc",
+                    "hybrid_ac69t88a.mcc/src",
+                    "hybrid_ac69t88a.mcc/src/config/default",
+                    "hybrid_ac69t88a.mcc/src/packs/SAM9X75D2G_DFP"
+                ],
+                "compiler++.extra-include-directories": [
+                    "hybrid_ac69t88a.mcc/mcc",
+                    "hybrid_ac69t88a.mcc/src",
+                    "hybrid_ac69t88a.mcc/src/config/default",
+                    "hybrid_ac69t88a.mcc/src/packs/SAM9X75D2G_DFP"
+                ],
+                "linker.no-device-startup-code": "true",
+                "compiler.additional-options": [
+                    "-marm"
+                ],
+                "compiler.isolate-each-function": "true",
+                "compiler.optimization-level": "-O1",
+                "compiler.place-data-into-section": "true",
+                "linker.remove-unused-sections": "true",
+                "compiler++.isolate-each-function": "true",
+                "compiler++.optimization-level": "-O1"
+            }
+        }
+    ],
+    "fileSets": [
+        {
+            "name": "default",
+            "files": [
+                {
+                    "include": "**/*",
+                    "exclude": [
+                        "**/@(build|_build|out|cmake|.vscode)/**/*",
+                        "hybrid_ac69t88a.mcc/src/config/default/peripheral/flexcom/twi/master/plib_flexcom6_twi_master.c"
+                    ]
+                },
+                "hybrid_ac69t88a.mcc/src/config/default/cstartup.S",
+                "hybrid_ac69t88a.mcc/src/config/default/ddram.ld",
+                "hybrid_ac69t88a.mcc/src/config/default/fault_handlers.c"
+            ]
+        }
+    ]
+}
